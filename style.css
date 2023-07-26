@@ -1,0 +1,119 @@
+body{
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+.topDiv{
+    height:100vh;
+      width: 100%;
+      margin-bottom:50px;
+ }
+
+ .downArrow{
+    position: absolute;
+    bottom: 00px;
+    animation: bounce .5s infinite alternate;
+}
+
+@keyframes bounce {
+    to { transform: translateY(5px); }
+  }
+  
+
+.chefDiv{
+    /* border: 1px solid; */
+    height: 100vh;
+    margin-right: -50px;
+}
+
+.chefImg{
+    position: absolute;
+    background-image: url("images/chef-with-his-arms-crossed-white-background-removebg-preview.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 650px;
+    z-index: 10px;
+    width:350px;
+    bottom: 0px;
+}
+
+.topHeading{
+    position: relative;
+    top:200px;
+    font-weight: 100;
+    font-size:48px;
+}
+
+.secDiv{
+    height: 100vh;
+    position: relative;
+    padding-top: 50px;
+}
+.weDo{
+    font-weight: 100;
+}
+
+.bigHeading{
+    text-align: center;
+    font-size: 120px;
+    font-weight: 400;
+}
+
+@media(max-width:900px){
+
+    .topDiv{
+        height:100vh;
+          width: 100%;
+          margin-bottom:400px;
+     }
+
+    .topHeading{
+        position: relative;
+        top:180px;
+        font-weight: 100;
+        font-size:48px;
+        left: 20px;
+    }
+    
+    .chefImg{
+        position: absolute;
+        background-image: url("images/chef-with-his-arms-crossed-white-background-removebg-preview.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        height: 500px;
+        z-index: 10px;
+        width:350px;
+        bottom: 80px;
+        right: -40px;
+    }
+
+    .secDiv{
+        height:75vh;
+        position: relative;
+        border: 1px solid;
+        /* margin-top: ; */
+    }
+
+    .downArrow{
+        position: absolute;
+        top: 1080px;
+        animation: bounce .5s infinite alternate;
+        z-index: 2;
+    }   
+
+    .weDo{
+        font-weight: 100;
+        text-align: center;
+    }
+   
+    .bigHeading{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 400;
+    }
+
+}
